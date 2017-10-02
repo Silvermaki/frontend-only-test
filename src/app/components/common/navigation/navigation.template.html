@@ -1,0 +1,35 @@
+<!-- Navbar -->
+<nav class="navbar-default navbar-static-side" role="navigation">
+  <div class="sidebar-collapse">
+    <ul class="nav metismenu" id="side-menu">
+      <!-- Navbar Header-->
+      <li class="nav-header no-margins no-padding">
+        <div class="profile-element no-margins no-padding">
+  
+          <span class="text-center clear no-margins no-padding">
+            <span class="block m-t-xs white-text"> <h2 class="font-bold">Menu</h2></span>
+          </span>
+        </div>
+        <div class="logo-element">
+         Menu
+        </div>
+      </li>
+      <!-- End Navbar Header -->
+      <!-- Navbar Items -->
+      <li  [ngClass]="{active: activeRoute('home')}">
+        <a [routerLink]="['/dashboard/home']"><i class="fa fa-comment"></i> <span class="nav-label">Notifications</span></a>
+      </li>
+      <li [ngClass]="{active: activeRoute('new_request')}">
+        <a [routerLink]="['/dashboard/new_request']"><i class="fa fa-plus"></i> <span class="nav-label">New Request</span></a>
+      </li>
+      <li [ngClass]="{active: activeRoute('my_requests')}">
+        <a [routerLink]="['/dashboard/my_requests']"><i class="fa fa-thumbs-up"></i> <span class="nav-label">My Requests</span></a>
+      </li>
+      <li [ngClass]="{active: activeRoute('review')}">
+        <a [routerLink]="['/dashboard/review']"><i class="fa fa-pencil"></i> <span class="nav-label">Review Requests</span></a>
+      </li>
+      <!-- End Navbar Items -->
+    </ul>
+  </div>
+</nav>
+<!-- End Navbar -->
